@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.title-header{
+  padding-left: 20px;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto;
+  color: #444955;
+  background-color: #FAFAFA;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: start;
+  padding-bottom: 10px;
+}
+
+
+input, select {
+  height: 35px;
+}
+
+form {
+  display: flex;
+  width: 350px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 50px;
+}
+
+label {
+  font-weight: bold;
+  display: flex;
+  font-size: large;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label:has(input[type="number"]), label:is([for="image"], [for="trunfo"]) {
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+input[type="number"], #image-field-container {
+  flex-grow: 1;
+}
+
+input[type="text"]:is(#image) {
+  width: 100%;
+}
+
+#image-field-container {
+  background-color: #023031;
+  padding-left: 45px;
+}
+
+button {
+  align-self: flex-start;
+  padding: 10px 30px;
+  border: none;
+  font-size: 1rem;
+  background-color: blue;
+  color: white;
+  border-radius: 3px;
+}
+
+
+#name {
+  padding-left: 15px;
+}
+
+#name::placeholder {
+  color: rgb(170, 170, 170);
+}
+
+::placeholder{
+  color: rgb(170, 170, 170);
+}
+
+.attr-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+:root {
+  --input-border: #8b8a8b;
+  --input-focus-h: 245;
+  --input-focus-s: 100%;
+  --input-focus-l: 42%;
+}
+.input {
+  font-size: 16px;
+
+  font-size: Max(16px, 1em);
+  font-family: inherit;
+  padding: 0.25em 0.5em;
+  background-color: #fff;
+  border: 2px solid var(--input-border);
+  border-radius: 4px;
+  transition: 180ms box-shadow ease-in-out;
+
+  --input-border: #0059ff; --input-focus-h: 200; --input-focus-s: 100%; --input-focus-l: 26%;
+}
+
+.input:focus {
+  border-color: hsl(
+    var(--input-focus-h),
+    var(--input-focus-s),
+    var(--input-focus-l)
+  );
+  box-shadow: 0 0 0 3px
+    hsla(
+      var(--input-focus-h),
+      var(--input-focus-s),
+      calc(var(--input-focus-l) + 40%),
+      0.8
+    );
+  outline: 3px solid transparent;
+}
+
+.input:not(textarea) {
+  line-height: 1;
+  height: 2.25rem;
+}
+
+input[type="file"] {
+  font-size: 0.9em;
+  padding-top: 0.35rem;
+}
+
+textarea.input {
+  resize: vertical;
+}
+
+.input[readonly] {
+  border-style: dotted;
+  cursor: not-allowed;
+  color: #777;
+}
+
+.input[disabled] {
+  --input-border: #ccc;
+
+  background-color: #eee;
+  cursor: not-allowed;
+}
+
+label {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.input + label {
+  margin-top: 2rem;
+}
+
+#main-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container{
+  padding-top: 30px;
+}
+
+
+#main-card{
+  border: solid #000000;
+  border-radius: 10px;
+  height: 490px;
+  width: 250px;
+  padding: 20px;
+  background-color: #cecece;
+  color: #000000;
+  
+}
+
+#main-card, h1, h2, h3{
+  font-weight: bold;
+  font-style: italic;
+}
+
+#main-card, button{
+  margin-top: 10px;
+}
+
+.card-content{
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+#main-card img{
+  height: 100px;
+}
+
+
+#card-name{
+  font-weight: bold;
+  font-style: italic;
+  color: #000000;
+  text-decoration:underline;
+}
+
+#card-description{
+  background-color: #adadad;
+  padding: 5px;
+  border-radius: 5px;
+}
